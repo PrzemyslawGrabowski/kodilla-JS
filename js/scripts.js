@@ -1,10 +1,14 @@
+var a = 5,
+	b = 6;
 
+var value = ((a*a)+(2*a*b)-(b*b));
 
-alert('Chcesz obliczyć pole trójkąta? Nic prostszego!   Wystarczy podać odpowiednie wartości.');
-var a = prompt('wpisz wartość podstawy trójkąta a');
-var h = prompt('wpisz wartość wysokości trójkąta h');
-var triangleArea = (a*h/2);
+if (value<0) {
+	console.log('Wynik jest ujemny');
+} else if (value>0) {
+	console.log('Wynik jest dodatni');
+}else {
+	alert('wynik równa się 0');
+}
 
-alert( 'Pole trójkąta o podstawie a: ' +a+ ' i wysokości h: ' +h+ ' wynosi: ' + triangleArea);
-
-console.log('pole trójkąta o podstawie a:'+a+' i wysokości h: '+h+' wynosi:' + triangleArea);
+console.log('wynik dziłania: (a*a)+(2*a*b)-(b*b) to: '+value);
