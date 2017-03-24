@@ -1,14 +1,8 @@
-var a = 5,
-	b = 6;
+var a = 5;
+var b = 6;
+var value = (a * a) + (2 * a * b) - (b * b);
 
-var value = ((a*a)+(2*a*b)-(b*b));
-
-if (value<0) {
-	console.log('Wynik jest ujemny');
-} else if (value>0) {
-	console.log('Wynik jest dodatni');
-}else {
-	alert('wynik równa się 0');
-}
+(value === 0) ? alert('wynik dziłania: (a * a) + (2 * a * b) - (b * b) równa się "0"') : alert('wynik dziłania: (a * a) + (2 * a * b) - (b * b) nie jest równy "0"')
 
 console.log('wynik dziłania: (a*a)+(2*a*b)-(b*b) to: '+value);
+
