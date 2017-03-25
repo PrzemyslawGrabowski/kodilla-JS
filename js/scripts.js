@@ -1,15 +1,12 @@
+var a = 2;
+var b = 4;
+var value = (a * a) + (2 * a * b) - (b * b);
 
-function getTriangleArea(a, h) {
-    
-    if (a, h <= 0) {
-        alert('nieprawilowe dane');
-    }
-    else {
-        return (a * h / 2);
-    }
+
+if (value === 0) {
+    alert('wynik działania: (a*a)+(2*a*b)-(b*b) równa się 0');
+} else {
+    (value > 0) ? alert('wynik dziłania jest dodatni') : alert('wynik działania jest ujemny');
 }
-console.log(getTriangleArea(10,6)); 
 
-var triangle1Area = getTriangleArea(10,15);
-var triangle2Area = getTriangleArea(3,15);
-var triangle3Area = getTriangleArea(12,5);
+console.log(value);
