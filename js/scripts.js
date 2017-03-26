@@ -1,12 +1,12 @@
-var a = 2;
-var b = 4;
-var value = (a * a) + (2 * a * b) - (b * b);
+var maleNames = ['Przemysław', 'Kondrad', 'Piotr' , 'Jakub' , 'Marek'];
+var femaleNames = ['Kasia', 'Ala', 'Jola', 'Kasia', 'Marta', 'Beata'];
+var allNames = maleNames.concat(femaleNames);
 
-
-if (value === 0) {
-    alert('wynik działania: (a*a)+(2*a*b)-(b*b) równa się 0');
+var newName = 'Lola';
+if (allNames.indexOf(newName) === -1) {
+	allNames.push(newName);
 } else {
-    (value > 0) ? alert('wynik dziłania jest dodatni') : alert('wynik działania jest ujemny');
+	alert('Takie imię już istnieje');
 }
 
-console.log(value);
+console.log(allNames);
