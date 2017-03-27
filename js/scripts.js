@@ -1,12 +1,7 @@
-var maleNames = ['Przemysław', 'Kondrad', 'Piotr' , 'Jakub' , 'Marek'];
-var femaleNames = ['Kasia', 'Ala', 'Jola', 'Kasia', 'Marta', 'Beata'];
-var allNames = maleNames.concat(femaleNames);
+var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centrymetrów, na czerwonych dywanach';
+var animal = 'Zielone słonie';
+var animalUpperCased = animal.toUpperCase();
+var textReplaced = text.replace('Papugi', 'ZIELONE SŁONIE');
+var textReplacedLength = textReplaced.length;
 
-var newName = 'Lola';
-if (allNames.indexOf(newName) === -1) {
-	allNames.push(newName);
-} else {
-	alert('Takie imię już istnieje');
-}
-
-console.log(allNames);
+console.log(textReplaced.substr(0,textReplaced.length/2));
