@@ -1,15 +1,6 @@
-function rysujChoinke(n) {
-    for (var i = 1; i <= n; i++) {
-		var star = '*';
-			for (var j=i; j<n; j++) {
-				star+= ' ';
-			}
-            
-			for (var j = 1 ; j < i*2-1; j++){
-				star += '*';
-			}
-			console.log(star)
-	}
-}
-rysujChoinke(5)
+var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centrymetrów, na czerwonych dywanach';
+var animal = 'Zielone słonie';
+var animalUpperCased = animal.toUpperCase();
+var textReplaced = text.replace('Papugi', 'ZIELONE SŁONIE');
 
+console.log(textReplaced.substr(0,textReplaced.length/2));
