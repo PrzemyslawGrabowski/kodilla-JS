@@ -1,7 +1,7 @@
-var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centrymetrów, na czerwonych dywanach';
+var text = 'Świnki koszą trawę, unosząc się nad ziemią 15 centrymetrów, na czerwonych dywanach';
 var animal = 'Zielone słonie';
 var animalUpperCased = animal.toUpperCase();
-var textReplaced = text.replace('Papugi', 'ZIELONE SŁONIE');
-var textReplacedLength = textReplaced.length;
+var firstWord = text.split(' ');
+var textReplaced = text.replace(firstWord[0], 'ZIELONE SŁONIE');
 
 console.log(textReplaced.substr(0,textReplaced.length/2));
